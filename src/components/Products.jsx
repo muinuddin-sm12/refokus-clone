@@ -1,5 +1,4 @@
 import Product from "./Product";
-
 const Products = () => {
   var products = [
     {
