@@ -32,7 +32,7 @@ const Work = () => {
     },
   ];
   return (
-    <div className="w-full py-24">
+    <div className="w-full mt-10">
       <div className="relative max-w-screen-xl mx-auto text-center">
         <h1 className="text-[30vw] text-white leading-none font-medium tracking-tight select-none">
           work

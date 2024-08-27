@@ -1,9 +1,10 @@
+/* eslint-disable react/prop-types */
 import { IoIosReturnRight } from "react-icons/io";
 
-const Button = () => {
+const Button = ({title}) => {
   return (
-    <div className="flex items-center justify-between min-w-40 px-4 py-2 bg-zinc-100 text-black rounded-full">
-        <span className="text-sm font-medium">Get Started</span>
+    <div className="flex items-center justify-between w-40 px-4 py-2 bg-zinc-100 text-black rounded-full">
+        <span className="text-sm font-medium">{title? title: "Get Started"}</span>
         <IoIosReturnRight/>
     </div>
   )
