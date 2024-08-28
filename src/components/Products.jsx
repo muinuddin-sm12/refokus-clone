@@ -1,4 +1,6 @@
+import { motion } from "framer-motion";
 import Product from "./Product";
+import { useState } from "react";
 const Products = () => {
   var products = [
     {
@@ -37,9 +39,51 @@ const Products = () => {
       case: false,
     },
   ];
+
+  const [position, setPosition] = useState(0);
+  const mover = (value) => {
+    setPosition(value * 15);
+  };
+
   return (
-    <div className="mt-32">
-      {products.map((elem, index) => <Product key={index} data={elem}/>)}
+    <div className="relative mt-32">
+      {products.map((elem, index) => (
+        <Product key={index} data={elem} count={index} mover={mover} />
+      ))}
+      <div className="absolute top-0 w-full h-full pointer-events-none">
+        <motion.div
+          initial={{ y: position, x: "-50%" }}
+          animate={{ y: position + `rem` }}
+          transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.6 }}
+          className="window absolute w-[20rem] h-[15rem] left-[45%] rounded-lg overflow-hidden"
+        >
+          <motion.div
+            animate={{ y: -position + `rem` }}
+            transition={{ease: [0.76, 0, 0.24, 1], duration: .5}}
+            className="w-full h-full bg-sky-100 "
+          ></motion.div>
+          <motion.div
+            animate={{ y: -position + `rem` }}
+            transition={{ease: [0.76, 0, 0.24, 1], duration: .5}}
+            className="w-full h-full bg-sky-200 "
+          ></motion.div>
+          <motion.div
+            animate={{ y: -position + `rem` }}
+            transition={{ease: [0.76, 0, 0.24, 1], duration: .5}}
+            className="w-full h-full bg-sky-300 "
+          ></motion.div>
+          <motion.div
+            animate={{ y: -position + `rem` }}
+            transition={{ease: [0.76, 0, 0.24, 1], duration: .5}}
+            className="w-full h-full bg-sky-400 "
+          ></motion.div>
+          <motion.div
+            animate={{ y: -position + `rem` }}
+            transition={{ease: [0.76, 0, 0.24, 1], duration: .5}}
+            className="w-full h-full bg-sky-500 "
+          ></motion.div>
+        </motion.div>
+      </div>
     </div>
   );
 };

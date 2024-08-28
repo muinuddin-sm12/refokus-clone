@@ -65,9 +65,6 @@ const Work = () => {
       case 8:
         imageShow([0, 1, 2, 3, 4]);
         break;
-      case 9:
-        imageShow([0, 1, 2, 3, 4, 5]);
-        break;
     }
   });
   return (
