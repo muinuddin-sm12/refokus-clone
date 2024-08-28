@@ -59,29 +59,59 @@ const Products = () => {
         >
           <motion.div
             animate={{ y: -position + `rem` }}
-            transition={{ease: [0.76, 0, 0.24, 1], duration: .5}}
-            className="w-full h-full bg-sky-100 "
-          ></motion.div>
+            transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.5 }}
+            className="w-full h-full bg-sky-100 p-8 "
+          >
+            <img
+              src="https://i.postimg.cc/Px2Rk840/Customized-Polaroid-Prints.jpg"
+              className="rounded-lg h-full w-full object-cover"
+              alt=""
+            />
+          </motion.div>
           <motion.div
             animate={{ y: -position + `rem` }}
-            transition={{ease: [0.76, 0, 0.24, 1], duration: .5}}
-            className="w-full h-full bg-sky-200 "
-          ></motion.div>
+            transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.5 }}
+            className="w-full h-full bg-sky-200 p-8"
+          >
+            <img
+              src="https://i.postimg.cc/tJJmRCvJ/Premium-PSD-Portrait-torn-paper-photo-frame-mockup.jpg"
+              className="rounded-lg h-full w-full object-cover"
+              alt=""
+            />
+          </motion.div>
           <motion.div
             animate={{ y: -position + `rem` }}
-            transition={{ease: [0.76, 0, 0.24, 1], duration: .5}}
-            className="w-full h-full bg-sky-300 "
-          ></motion.div>
+            transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.5 }}
+            className="w-full h-full bg-sky-300 p-8"
+          >
+            <img
+              src="https://i.postimg.cc/wMr418nV/Premium-PSD-Realistic-Portrait-Paper-Frame-Photo-Mockup.jpg"
+              className="rounded-lg h-full w-full object-cover"
+              alt=""
+            />
+          </motion.div>
           <motion.div
             animate={{ y: -position + `rem` }}
-            transition={{ease: [0.76, 0, 0.24, 1], duration: .5}}
-            className="w-full h-full bg-sky-400 "
-          ></motion.div>
+            transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.5 }}
+            className="w-full h-full bg-sky-400 p-8"
+          >
+            <img
+              src="https://i.postimg.cc/ryZPnxzr/Premium-PSD-Vintage-Torn-Paper-Frame-Mockup.jpg"
+              className="rounded-lg h-full w-full object-cover"
+              alt=""
+            />
+          </motion.div>
           <motion.div
             animate={{ y: -position + `rem` }}
-            transition={{ease: [0.76, 0, 0.24, 1], duration: .5}}
-            className="w-full h-full bg-sky-500 "
-          ></motion.div>
+            transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.5 }}
+            className="w-full h-full bg-sky-500 p-8"
+          >
+            <img
+              src="https://i.postimg.cc/dt7Sz3TS/Tent-Card-Printing.jpg"
+              className="rounded-lg h-full w-full object-cover"
+              alt=""
+            />
+          </motion.div>
         </motion.div>
       </div>
     </div>
