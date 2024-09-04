@@ -1,9 +1,10 @@
 /* eslint-disable react/prop-types */
+import { motion } from "framer-motion";
 import { IoIosArrowRoundForward } from "react-icons/io";
 
-const Card = ({ width, start, para, hover, heading, title}) => {
+const Card = ({ width, start, para, heading, title, hover="false"}) => {
   return (
-    <div className={`bg-zinc-800 rounded-xl hover:${hover} hover:px-8 transition-all min-h-[30rem] p-5 ${width} flex flex-col justify-between`}>
+    <motion.div whileHover={{backgroundColor: hover==="true" ? "#7443ff" : "#52525B"}}  className={`bg-zinc-800 rounded-xl hover:p-8 min-h-[30rem] p-5 ${width} flex flex-col justify-between`}>
       <div className="w-full">
         <div className="w-full flex justify-between items-center">
           <h3>{heading}</h3>
@@ -30,7 +31,7 @@ const Card = ({ width, start, para, hover, heading, title}) => {
           </p>
         )}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

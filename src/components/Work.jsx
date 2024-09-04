@@ -80,7 +80,7 @@ const Work = () => {
                 <img
                   className="absolute h-60 w-60 object-cover overflow-hidden rounded-md -translate-x-[50%] -translate-y-[50%]"
                   src={elem?.url}
-                  style={{ top: elem?.top, left: elem?.left }}
+                  style={{ top: elem.top, left: elem.left }}
                   key={elem.url}
                 />
               )
