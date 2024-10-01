@@ -46,7 +46,7 @@ const Products = () => {
   };
 
   return (
-    <div className="relative mt-32">
+    <div className="relative mt-32 py-10">
       {products.map((elem, index) => (
         <Product key={index} data={elem} count={index} mover={mover} />
       ))}
