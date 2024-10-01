@@ -46,11 +46,11 @@ const Products = () => {
   };
 
   return (
-    <div className="relative mt-32 py-10">
+    <div className="relative mt-32 pt-10 pb-20">
       {products.map((elem, index) => (
         <Product key={index} data={elem} count={index} mover={mover} />
       ))}
-      <div className="absolute top-0 w-full h-full pointer-events-none">
+      <div className="absolute top-10 w-full h-full pointer-events-none">
         <motion.div
           initial={{ y: position, x: "-50%" }}
           animate={{ y: position + `rem` }}
