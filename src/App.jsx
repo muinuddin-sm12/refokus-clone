@@ -5,10 +5,10 @@ import Navbar from "./components/Navbar";
 import Products from "./components/Products";
 import Stripes from "./components/Stripes";
 import Work from "./components/Work";
-import LocomotiveScroll from "locomotive-scroll";
+// import LocomotiveScroll from "locomotive-scroll";
 
 const App = () => {
-  const locomotiveScroll = new LocomotiveScroll();
+  // const locomotiveScroll = new LocomotiveScroll();
 
   return (
     <div className="min-h-screen w-full bg-zinc-900">

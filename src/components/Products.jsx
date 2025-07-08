@@ -46,7 +46,7 @@ const Products = () => {
   };
 
   return (
-    <div className="relative mt-32 pt-10 pb-20">
+    <div className="relative mt-32 px-6 md:px-12 lg:px-20 pt-10 pb-20">
       {products.map((elem, index) => (
         <Product key={index} data={elem} count={index} mover={mover} />
       ))}
