@@ -46,7 +46,7 @@ const Marquees = () => {
     },
   ];
   return (
-    <div className="bg-white py-40">
+    <div className="bg-white overflow-y-hidden py-40 ">
       <Marquee>
         {data.map((elem, index) => (
           <MarqueeImg key={index} value={elem} />
